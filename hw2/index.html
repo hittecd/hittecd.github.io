@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>CSCI 7000-001: Assigment 1 (Chris Hitte)</title>
+        <link rel="stylesheet" href="phone.css">
+        <link rel="stylesheet"
+              href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+              integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+              crossorigin="anonymous">
+    </head>
+    <body onload="setup()">
+        <div id="phone_container">
+            <div class="nav-bar">
+                <button id="nav_btn_dialer" class="nav-bar-btn selected">Dialer</button>
+                <button id="nav_btn_contacts" class="nav-bar-btn">Contacts</button>
+                <button id="nav_btn_add_contact" class="nav-bar-btn">Add Contact</button>
+                <button id="nav_btn_gestures" class="nav-bar-btn">Gestures</button>
+            </div>
+
+            <div id="tab_dialer" class="phone-tab">
+                <div id="dialer_title" class="phone-tab-title">Dialer</div>
+
+                <div id="dialer_num_display_container">
+                    <span id="dialer_num_display"></span>
+                </div>
+
+                <div id="dialer_num_pad_container">
+                    <div id="dialer_num_pad_table">
+                        <div class="keypad-row">
+                            <button class="keypad-btn">1</button>
+                            <button class="keypad-btn">2</button>
+                            <button class="keypad-btn">3</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn">4</button>
+                            <button class="keypad-btn">5</button>
+                            <button class="keypad-btn">6</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn">7</button>
+                            <button class="keypad-btn">8</button>
+                            <button class="keypad-btn">9</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn">*</button>
+                            <button class="keypad-btn">0</button>
+                            <button class="keypad-btn">#</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button id="dialer_call_btn" class="keypad-btn">Call</button>
+                            <button id="dialer_clear_btn" class="keypad-btn">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab_contacts" class="phone-tab">
+                <div id="contacts_title" class="phone-tab-title">Contacts</div>
+                <div id="contacts_container">
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Bob Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">James Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Alice Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Bob Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">James Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Alice Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Bob Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">James Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Alice Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Bob Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">James Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                    <div class="contact-item-container">
+                        <div class="contact-item-name">Alice Johnson</div>
+                        <div class="contact-item-number">555-555-5555</div>
+                        <div class="contact-item-email">test@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab_add_contact" class="phone-tab">
+                <div id="add_contacts_title" class="phone-tab-title">Add Contact</div>
+
+                <form id="add_contact_form">
+                    <div id="add_contacts_name_container" class="add-contacts-field-container">
+                        <div id="add_contacts_name_title" class="add-contacts-field-title">Name</div>
+
+                        <div id="add_contacts_name_field" class="add-contacts-field">
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                    </div>
+
+                    <div id="add_contacts_number_container" class="add-contacts-field-container">
+                        <div id="add_contacts_number_title" class="add-contacts-field-title">Phone number</div>
+
+                        <div id="add_contacts_number_field" class="add-contacts-field">
+                            <input type="text" placeholder="555-555-5555">
+                        </div>
+                    </div>
+
+                    <div id="add_contacts_email_container" class="add-contacts-field-container">
+                        <div id="add_contacts_email_title" class="add-contacts-field-title">Email address</div>
+
+                        <div id="add_contacts_email_field" class="add-contacts-field">
+                            <input type="email" placeholder="john.doe@gmail.com">
+                        </div>
+                    </div>
+
+                    <div id="add_contact_btns_container">
+                        <button id="add_contact_btn" class="add-contact-btn">
+                            Add contact
+                        </button>
+                        <button id="clear_contact_btn" class="add-contact-btn">
+                            Clear
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="tab_gestures" class="phone-tab">
+                <div id="gestures_title" class="phone-tab-title">Gestures</div>
+
+                <div id="gesture_display_container">
+                    <span id="gesture_display"></span>
+                </div>
+
+                <div id="gesture_pad"></div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="phone.js"></script>
+    </body>
+</html>
