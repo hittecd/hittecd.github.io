@@ -174,6 +174,9 @@ $(".nav-bar-btn").click(
         var targetTabId = navBtnPhoneTabMap[callerBtnId];
         $(targetTabId).show();
 
+        if(targetTabId === "#tab_gestures")
+            updateGestureStatus(UNDEFINED);
+
         // update nav bar icon
         $(".nav-bar-btn").each(
             function() {
@@ -265,6 +268,4 @@ $(".add-contact-btn").hover(
 
 function setup() {
     $("#nav_btn_dialer").click();
-
-    updateGestureStatus(UNDEFINED);
 }
