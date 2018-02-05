@@ -265,4 +265,6 @@ $(".add-contact-btn").hover(
 
 function setup() {
     $("#nav_btn_dialer").click();
+
+    updateGestureStatus(UNDEFINED);
 }
