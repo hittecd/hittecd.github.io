@@ -1,0 +1,175 @@
+#phone_container {
+    width: 300px;
+    height: 500px;
+    margin: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.nav-bar {
+    width: auto;
+    margin-bottom: 10px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: gray;
+    background-color: gray;
+    justify-content: space-around;
+    display: flex;
+}
+
+#dialer_num_display_container {
+    width:inherit;
+}
+
+#add_contact_form {
+    margin: 10px;
+}
+
+#dialer_num_display {
+    height: 40px;
+    width: auto;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+#dialer_num_pad_table {
+    border-spacing: 10px;
+    margin: 10px;
+    width: 280px;
+    height: inherit;
+}
+
+.phone-tab-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+    width: inherit;
+}
+
+.keypad-row {
+    width: inherit;
+}
+
+.keypad-btn {
+    background-color: gray;
+    border-color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    color: white;
+    display: inline-block;
+}
+
+#add_contact_btns_container {
+    width: inherit;
+    height: auto;
+    margin-top: 35px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.add-contact-btn {
+    background-color: gray;
+    border-color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    color: white;
+    display: inline-block;
+}
+
+.nav-bar-btn {
+    background-color: gray;
+    border-width: 0px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.nav-bar-btn.selected {
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+.nav-bar-btn.hover {
+    background-color: lightgray;
+    color:black;
+    font-weight: bold;
+}
+
+#dialer_call_btn {
+    width: 60%;
+    background-color: limegreen;
+}
+
+#dialer_clear_btn {
+    width: 40%;
+    background-color: red;
+}
+
+.add-contacts-field-container {
+    margin: 10px auto;
+    width: inherit;
+}
+
+.keypad-row {
+    width: inherit;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+#tab_contacts {
+    overflow: hidden;
+}
+
+#contacts_container {
+    margin: 10px auto;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.contact-item-container {
+    width: inherit;
+    height: auto;
+    background-color: lightgray;
+    margin: 2px;
+    padding: 10px;
+}
+
+.contact-item-name {
+    height: auto;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.contact-item-number {
+    height: auto;
+    color: black;
+    text-align: right;
+}
+
+.contact-item-email {
+    height: auto;
+    color: blue;
+    text-align: right;
+}
+
+input {
+    width: 100%;
+}
+
+form {
+    margin: 10px 0px 10px 0px;
+}

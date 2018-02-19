@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assingment 4: Web Accessibility</title>
+    <link type="text/css" rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+    <div id="blog_body" role="main">
+        <div id="blog_header" role="banner">
+            <h1 id="blog_title">How I Got My Cats</h1>
+        </div>
+        <div id="blog_navbar" role="navigation">
+            <button class="navbar-btn">Home</button>
+            <button class="navbar-btn">About Me</button>
+            <button class="navbar-btn">Archive</button>
+            <button class="navbar-btn">Articles</button>
+            <button class="navbar-btn">Videos</button>
+        </div>
+        <div id="blog_story" class="blog-body-section" role="region">
+            <h2>The Story</h2>
+            <div id="blog_story" class="blog-story-section">
+                <p>I've always been a dog guy. More than that, I was anti-cat. Cats I thought, were simply inferior to dogs. How could they compete with the wagging tails, the overt affection, or the impromptu tongue baths? They simply couldn't I thought, and therefore, I was as happy to ignore them as they seemed to be to ignore me.</p>
+                <p>This was all destined to changed on a walk I was taking with my wife after a date. We had gone to dinner together and were enjoying the evening when we noticed a shop in our neighborhood that we'd never noticed before. As we drew closer we saw that it was a pet supply store. That made a bit more sense; we did not have any pets... at that time.</p>
+                <p>We walked up to the store front window and took in the usual sights when something unexpected jumped onto the window sill. Two somethings actually. In the window of that random pet shop now stood two black kittens. Were they adorable? I mean, I don't know, they were pretty cute or whatever. Their little feet. Their little noses. Their big cute eyes that shouted 'Take us home with you, puh-puh-puh-please.' Ok, yes, they were adorable. We decided to come back the next day and see if they were still available.</p>
+                <p>Now normally, between my wife and I, I'm the one who jumps head first into big decisions. My wife is much more level headed and generally responsible than I am. But when I woke up the next morning it was to my wife already dressed in work out clothes. I asked if she'd already been for a run and she said yes. And where did she run? Well maybe by that pet shop. She had literally gone and picked the cats up the very second the pet store opened. "I didn't want someone else to beat us," she said. That's when I noticed that it wasn't just her pacing around our bedroom. There were two little black shadows running around on the floor too.</p>
+                <p>And that's the story of how I became a cat person. Those two kittens we saw in the window are now some of the coolest cats you'll ever meet.</p>
+            </div>
+            <div id="cats_img_container" class="blog-story-section">
+                <img alt="Kipling and Bagheera asleep in bed." src="/Users/hitte/Pictures/cat2.jpg" style="width:500px;height:350px">
+            </div>
+        </div>
+        <div id="cat_facts_container" class="blog-body-section" role="region">
+            <h2>Cat Facts!</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Fun Fact</th>
+                </tr>
+                <tr>
+                    <td>Bagheera</td>
+                    <td>White Spot on chest (this is the only way we can tell either cat apart). Smaller. More affectionate.</td>
+                    <td>Bagheera is named after the panther in the Jungle Books.</td>
+                </tr>
+                <tr>
+                    <td>Kipling</td>
+                    <td>Bigger. More playful. Chatty.</td>
+                    <td>Kipling once jumped from our 3rd story balcony to our neighbors balcony! We had to ask them to let us get our cat. He is no longer allowed outside.</td>
+                </tr>
+            </table>
+        </div>
+        <div id="cat_picker_container" class="blog-body-section" role="region">
+            <h2>Pick your favorite cat!</h2>
+            <p>Based on what you've learned about my cats above, please select which one is your favorite:</p>
+            <form id="cat_picker_form" role="form">
+                <span><input type="radio" name="catPicker" value="Bagheera" checked>Bagheera</span>
+                <span><input type="radio" name="catPicker" value="Kipling">Kipling</span>
+                <br>
+                <input id="submit_btn" type="submit">
+            </form>
+            <div id="kipling_img_container" class="blog-story-section">
+                <img alt="Kipling's cute face." src="/Users/hitte/Pictures/cat.jpg" style="width:500px;height:350px">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assignment4.js"></script>
+</body>
+</html>
