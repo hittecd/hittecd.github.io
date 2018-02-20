@@ -17,7 +17,7 @@
             <button class="navbar-btn">Articles</button>
             <button class="navbar-btn">Videos</button>
         </div>
-        <div id="blog_story" class="blog-body-section" role="region">
+        <div id="blog_story_container" class="blog-body-section" role="region">
             <h2>The Story</h2>
             <div id="blog_story" class="blog-story-section">
                 <p>I've always been a dog guy. More than that, I was anti-cat. Cats I thought, were simply inferior to dogs. How could they compete with the wagging tails, the overt affection, or the impromptu tongue baths? They simply couldn't I thought, and therefore, I was as happy to ignore them as they seemed to be to ignore me.</p>
@@ -28,6 +28,7 @@
             </div>
             <div id="cats_img_container" class="blog-story-section">
                 <img alt="Kipling and Bagheera asleep in bed." src="./cat2.jpg" style="width:500px;height:350px">
+                <div class="img-description"><p>My two cats doing what they do best: sleeping.</p></div>
             </div>
         </div>
         <div id="cat_facts_container" class="blog-body-section" role="region">
@@ -44,9 +45,9 @@
                     <td>Bagheera is named after the panther in the Jungle Books.</td>
                 </tr>
                 <tr>
-                    <td>Kipling</td>
-                    <td>Bigger. More playful. Chatty.</td>
-                    <td>Kipling once jumped from our 3rd story balcony to our neighbors balcony! We had to ask them to let us get our cat. He is no longer allowed outside.</td>
+                    <td class="row-alt">Kipling</td>
+                    <td class="row-alt">Bigger. More playful. Chatty.</td>
+                    <td class="row-alt">Kipling once jumped from our 3rd story balcony to our neighbors balcony! We had to ask them to let us get our cat. He is no longer allowed outside.</td>
                 </tr>
             </table>
         </div>
@@ -59,8 +60,17 @@
                 <br>
                 <input id="submit_btn" type="submit">
             </form>
+            <div id="alert_container" role="alert">
+                <div id="alert_msg_container">
+                    <p id="alert_msg"></p>
+                </div>
+                <div id="confirm_btn_container">
+                    <button id="confirmation_btn">Confirm</button>
+                </div>
+            </div>
             <div id="kipling_img_container" class="blog-story-section">
                 <img alt="Kipling's cute face." src="./cat.jpg" style="width:500px;height:350px">
+                <div class="img-description"><p>My cat Bagheera... or is it Kipling?</p></div>
             </div>
         </div>
     </div>
