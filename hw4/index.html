@@ -56,11 +56,17 @@
             <p>Based on what you've learned about my cats above, please select which one is your favorite:</p>
             <form id="cat_picker_form" role="form">
                 <fieldset id="cat_picker_fieldset">
-                    <span><input id="rad_btn_bagheera" type="radio" name="catPicker" value="Bagheera" checked><label for="rad_btn_bagheera">Bagheera</label></span>
-                    <span><input id="rad_btn_kipling" type="radio" name="catPicker" value="Kipling"><label for="rad_btn_kipling">Kipling</label></span>
+                    <span>
+                        <label for="rad_btn_bagheera">Bagheera</label>
+                        <input id="rad_btn_bagheera" type="radio" name="catPicker" value="Bagheera" checked>
+                    </span>
+                    <span>
+                        <label for="rad_btn_kipling">Kipling</label>
+                        <input id="rad_btn_kipling" type="radio" name="catPicker" value="Kipling">
+                    </span>
                 </fieldset>
                 <br>
-                <input id="submit_btn" value="Submit" type="submit">
+                <input id="submit_btn" value="Choose Your Cat" type="submit">
             </form>
             <div id="alert_container" role="alert">
                 <div id="alert_msg_container">
