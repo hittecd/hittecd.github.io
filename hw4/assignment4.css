@@ -74,6 +74,10 @@ img {
     z-index: 5;
 }
 
+#cat_picker_fieldset {
+    border: 0;
+}
+
 #alert_container {
     background-color: #ff1919;
     display: none;
