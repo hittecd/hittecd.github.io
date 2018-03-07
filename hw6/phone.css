@@ -1,0 +1,514 @@
+#phone_container {
+    margin: 25px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#phone_container.high-vis {
+    width: 400px;
+    height: 500px;
+    border-color: gray;
+    background-color: white;
+}
+
+#phone_container.low-vis {
+    width: 800px;
+    height: 1000px;
+    border-color: yellow;
+    background-color: black;
+}
+
+.nav-bar {
+    width: auto;
+    margin-bottom: 10px;
+    border-width: 0px;
+    border-style: solid;
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav-bar.high-vis {
+    border-color: gray;
+    background-color: gray;
+}
+
+.nav-bar.low-vis {
+    border-color: yellow;
+    background-color: black;
+}
+
+#dialer_num_display_container {
+    width:inherit;
+}
+
+#add_contact_form {
+    margin: 10px;
+}
+
+#dialer_num_display_container {
+    width: inherit;
+    text-align: center;
+    width: auto;
+    border: 2px solid;
+    margin: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+#dialer_num_display_container.high-vis {
+    height: 40px;
+    border-color: grey;
+}
+
+#dialer_num_display_container.low-vis {
+    height: 80px;
+    border-color: yellow;
+}
+
+#dialer_num_display {
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#dialer_num_display.high-vis {
+    font-size: xx-large;
+    color: black;
+}
+
+#dialer_num_display.low-vis {
+    font-size: 50pt;
+    color: yellow;
+}
+
+#dialer_num_pad_table {
+    border-spacing: 10px;
+    margin: auto;
+    height: inherit;
+}
+
+#dialer_num_pad_table.high-vis {
+    width: 280px;
+}
+
+#dialer_num_pad_table.low-vis {
+    width: 560px;
+}
+
+.phone-tab-title {
+    font-weight: bold;
+    margin-left: 10px;
+    width: inherit;
+}
+
+.phone-tab-title.high-vis {
+    font-size: x-large;
+    color: black;
+}
+
+.phone-tab-title.low-vis {
+    font-size: xx-large;
+    color: yellow;
+}
+
+.keypad-row {
+    width: inherit;
+}
+
+.keypad-btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.keypad-btn.high-vis {
+    background-color: gray;
+    border-color: white;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    color: white;
+}
+
+.keypad-btn.low-vis {
+    background-color: black;
+    border-color: yellow;
+    width: 200px;
+    height: 100px;
+    font-size: xx-large;
+    color: yellow;
+}
+
+.keypad-btn.high-vis.hover {
+    background-color: lightgray;
+    border-color: white;
+    color: white;
+}
+
+.keypad-btn.low-vis.hover {
+    background-color: lightblue;
+    border-color: yellow;
+    color: yellow;
+}
+
+#add_contact_btns_container {
+    width: inherit;
+    height: auto;
+    margin-top: 35px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.add-contact-btn {
+    display: inline-block;
+}
+
+.add-contact-btn.high-vis {
+    background-color: gray;
+    border-color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.add-contact-btn.low-vis {
+    background-color: black;
+    border-color: yellow;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: x-large;
+    color: yellow;
+}
+
+.add-contact-btn.high-vis.hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.add-contact-btn.low-vis.hover {
+    background-color: lightblue;
+}
+
+.nav-bar-btn {
+    border-width: 0px;
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.nav-bar-btn.high-vis {
+    background-color: gray;
+    width: 100px;
+    height: 40px;
+    font-size: medium;
+    color: white;
+}
+
+.nav-bar-btn.low-vis {
+    background-color: black;
+    width: 200px;
+    height: 80px;
+    font-size: large;
+    color: yellow;
+}
+
+.nav-bar-btn.selected {
+    font-weight: bold;
+}
+
+.nav-bar-btn.high-vis.selected {
+    background-color: white;
+    color: black;
+}
+
+.nav-bar-btn.low-vis.selected {
+    background-color: blue;
+    color: yellow;
+}
+
+.nav-bar-btn.hover {
+    font-weight: bold;
+}
+
+.nav-bar-btn.high-vis.hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.nav-bar-btn.low-vis.hover {
+    background-color: lightblue;
+    color: yellow;
+}
+
+#dialer_call_btn {
+    font-weight: bold;
+    width: 60%;
+}
+
+#dialer_call_btn.high-vis {
+    color: white;
+    background-color: limegreen;
+}
+
+#dialer_call_btn.high-vis.hover {
+    color: black;
+    background-color: lightgreen;
+}
+
+#dialer_call_btn.low-vis {
+    color: brown;
+    background-color: lightgreen;
+}
+
+#dialer_call_btn.low-vis.hover {
+    background-color: lightblue;
+}
+
+#dialer_clear_btn {
+    font-weight: bold;
+    width: 40%;
+}
+
+#dialer_clear_btn.high-vis {
+    color: white;
+    background-color: red;
+}
+
+#dialer_clear_btn.high-vis.hover {
+    color: black;
+    background-color: lightcoral;
+}
+
+#dialer_clear_btn.low-vis {
+    color: brown;
+    background-color: darkorange;
+}
+
+#dialer_clear_btn.low-vis.hover {
+    background-color: orange;
+}
+
+.add-contacts-field-container.high-vis {
+    margin: 10px auto;
+    width: inherit;
+}
+
+.add-contacts-field.low-vis {
+    font-size: xx-large;
+    background-color: lightblue;
+    color: yellow;
+    border-color: yellow;
+}
+
+.keypad-row {
+    width: inherit;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+#tab_contacts {
+    overflow: hidden;
+}
+
+#contacts_container {
+    margin: 10px auto;
+    overflow-y: scroll;
+}
+
+#contacts_container.high-vis {
+    height: 350px;
+    background-color: white;
+}
+
+#contacts_container.low-vis {
+    height: 700px;
+    background-color: black;
+}
+
+.contact-item-container {
+    width: inherit;
+    height: auto;
+    margin: 2px;
+    padding: 10px;
+}
+
+.contact-item-container.high-vis {
+    background-color: lightgray;
+}
+
+.contact-item-container.low-vis {
+    background-color: lightblue;
+}
+
+.contact-item-name {
+    height: auto;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-item-name.high-vis {
+    color: black;
+    font-size: large;
+}
+
+.contact-item-name.low-vis {
+    color: yellow;
+    font-size: xx-large;
+}
+
+.contact-item-number {
+    height: auto;
+    color: black;
+    text-align: right;
+}
+
+.contact-item-number.high-vis {
+    color: black;
+    font-size: large;
+}
+
+.contact-item-number.low-vis {
+    color: yellow;
+    font-size: xx-large;
+}
+
+.contact-item-email {
+    height: auto;
+    color: blue;
+    text-align: right;
+}
+
+.contact-item-email.high-vis {
+    font-size: large;
+}
+
+.contact-item-email.low-vis {
+    font-size: xx-large;
+}
+
+
+#gesture_display_container {
+    width: inherit;
+    text-align: center;
+    width: auto;
+    border: 2px solid;
+    margin: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+#gesture_display_container.high-vis {
+    height: 40px;
+    border-color: black;
+}
+
+#gesture_display_container.low-vis {
+    height: 80px;
+    border-color: yellow;
+}
+
+#gesture_display {
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#gesture_display.high-vis {
+    background-color: white;
+    font-size: large;
+    color: black;
+}
+
+#gesture_display.low-vis{
+    background-color: black;
+    font-size: 50pt;
+    color: yellow;
+}
+
+#gesture_pad {
+    width: inherit;
+    margin: 10px;
+    border: 2px solid;
+}
+
+#gesture_pad.high-vis {
+    height: 300px;
+    background-color: lightgrey;
+}
+
+#gesture_pad.low-vis {
+    height: 600px;
+    background-color: lightblue;
+}
+
+#toggle_vis_btn_container {
+    text-align: center;
+    width: auto;
+}
+
+#toggle_vis_btn_container.high-vis {
+    margin-top: 20px;
+}
+
+#toggle_vis_btn_container.low-vis {
+    margin-top: 40px;
+}
+
+#toggle_vis_btn.high-vis {
+    font-size: large;
+    background-color: gray;
+    border: 2px solid gray;
+    color: white;
+    width: 95%;
+}
+
+#toggle_vis_btn.high-vis.hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#toggle_vis_btn.low-vis {
+    font-size: xx-large;
+    background-color: black;
+    border: 2px solid yellow;
+    color: yellow;
+    width: 95%;
+}
+
+#toggle_vis_btn.low-vis.hover {
+    background-color: lightblue;
+}
+
+#about_body_container {
+    width: 100%;
+    text-align: center;
+}
+
+#about_body.high-vis {
+    background-color: white;
+    color: black;
+    font-size: large;
+}
+
+#about_body.low-vis {
+    background-color: black;
+    color: yellow;
+    font-size: xx-large;
+}
+
+input {
+    width: 100%;
+}
+
+form {
+    margin: 10px 0px 10px 0px;
+}
