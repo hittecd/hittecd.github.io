@@ -1,6 +1,33 @@
 // this gives us the order of the buttons, which we can use to step through the buttons in various directions
 // since we know the layout, + 1 moves to the next item, -1 previous, +4 is one row down, -4 is one row up
-buttonOrder = ["#button7","#button8","#button9","#buttonDivide","#button4","#button5","#button6","#buttonMultiply","#button1","#button2","#button3","#buttonAdd","#button0","#buttonClear","#buttonEquals","#buttonSubtract"];
+var numSwitches = 1;
+var buttonOrder = ["#button7","#button8","#button9","#buttonDivide","#button4","#button5","#button6","#buttonMultiply","#button1","#button2","#button3","#buttonAdd","#button0","#buttonClear","#buttonEquals","#buttonSubtract"];
+var intervalId;
+
+$(".switch-control").on(
+	"change",
+	function()
+	{
+		var id = $(this).attr("id");
+
+		if(id == "switch_control_1")
+		{
+			numSwitches = 1;
+			intervalId = window.setInterval(selectNext, 500);
+		}
+		else if(id == "switch_control_3")
+		{
+			numSwitches = 3;
+			clearInterval(intervalId);
+		}
+		else
+		{
+			numSwitches = 5;
+			clearInterval(intervalId);
+		}
+	}
+);
+
 
 // add the selected class to an item. you can pass this any jquery selector, such as #id or .class
 // calling this will de-select anything currently selected
@@ -91,11 +118,52 @@ function clickSelectedItem() {
 
 // this function responds to user key presses
 // you'll rewrite this to control your interface using some number of keys
+var switch1Handler = function(e) {
+	if(e.keyCode == 32) {
+		clickSelectedItem();
+	}
+};
+
+var switch3Handler = function(e) {
+	if(e.keyCode == 32) {
+		clickSelectedItem();
+	}
+	else if(e.key == "d") {
+		selectNext();
+	}
+	else if(e.key == "a") {
+		selectPrevious();
+	}
+};
+
+var switch5Handler = function (e) {
+	if(e.keyCode == 32) {
+		clickSelectedItem();
+	}
+	else if(e.key == "d") {
+		selectNext();
+	}
+	else if(e.key == "a") {
+		selectPrevious();
+	}
+	else if(e.key == "w") {
+		selectUp();
+	}
+	else if(e.key == "s") {
+		selectDown();
+	}
+}
+
 $(document).keypress(function(event) {
-	if (event.key == "a") {
-		alert("You pressed the 'a' key!")	
-	} else if (event.key == "b") {
-		alert("You pressed the 'b' key!")
+	if (numSwitches == 1) {
+		switch1Handler(event)
+	}
+	else if (numSwitches == 3) {
+		switch3Handler(event)
+	}
+	else
+	{
+		switch5Handler(event)
 	}
 })
 

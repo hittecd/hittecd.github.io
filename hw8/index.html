@@ -37,14 +37,45 @@
 				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
 			</div>
 		</div>
+		<div id="settings">
+			Select Number of Switches:
+			<input id="switch_control_1" type="radio" class="switch-control" name="switchCtrl" value="1">1
+			<input id="switch_control_3" type="radio" class="switch-control" name="switchCtrl" value="3">3
+			<input id="switch_control_4" type="radio" class="switch-control" name="switchCtrl" value="5">5
+		</div>
 		<div id="comments">
 			<h2>About this app</h2>
-			<p>Include information here about your app.</p>
+			<h3>Introduction</h3>
+			<p>For this app I chose to implement 3 different switch levels. Switch 1 iterates Left-Right, Top-Bottom, every 0.5 seconds. Switch 3 allows the user to move left and right. Finally, Switch 5 allows the user to move Up, Left, Right, and Down.</p>
+			<p>I tested each switch by performing the following calculations:</p>
 			<ul>
-				<li>Instructions for using the app</li>
-				<li>Test results</li>
-				<li>Anything else you have tried out</li>
+				<li>7 + 3</li>
+				<li>7 - 3</li>
+				<li>7 * 3</li>
+				<li>7 / 3</li>
+				<li>3 + 7</li>
+				<li>3 - 7</li>
+				<li>3 * 7</li>
+				<li>3 / 7</li>
 			</ul>
+			<p>I chose these calculations because they contain every combination of navigation paths across the key pad. I tested each calculation 3 times per Switch level and test method. My test methods involved first performing the calculations with my hands, and then performing them by using my nose.</p>
+			<h3>Instructions</h3>
+			<p>Chose a switch level via the radio buttons underneath the calculator.</p>
+			<ul>
+				<li>Switch 1: SPACE to select</li>
+				<li>Switch 3: SPACE to select, "a" - left, "d" - right</li>
+				<li>Switch 5: SPACE to select, "w" - up, "a" - left, "s" - down, "d" - right</li>
+			</ul>
+			<h3>Findings</h3>
+			<p>My main take away from my tests was that the each switch level offered distinct advantages and disadvantages.</p>
+			<h4>Switch 1</h4>
+			<p>To begin with, the main problem I encountered with Switch 1 was that I was required to wait for the cursor to cycle around to my desired character, even if the cursor was one past the character I wanted to select. For example, in the calculation 3 * 7, the user must wait for the cursor to cycle all the way back around to * after selecting 3 even though the 3 key is 2 keys away by the shortest path. This was especially frustrating when I simply failed to press a key in time. However, when using my nose, this actually gave me time to rest my neck and glace at the screen for reference as to where I was.</p>
+			<h4>Switch 3</h4>
+			<p>When using Switch 3, I encountered a lesser version of the problem in Switch 1. While I could reduce the number of keys traversed by moving backwards and forwards, I still had move as many as 4 key spaces away to select a key located directly above my starting position. The ability to directly control my cursor however meant that if I overshot or undershot my desired key, I could easily correct for it. I also found that Switch 3 was the most intuitive to learn. I was able to quickly and consistently improve my calculation times when I switched to this system.</p>
+			<h4>Switch 5</h4>
+			<p>Finally, Switch 5 offered the most extreme pro's and con's. This stemmed from the fact that when the ability to move in any direction was fully taken advantage of, the greatest speed increases could be attained. However, to fully take advantage of Switch 5, a strong faimiliarity with the keypad was required. I often found myself scrolling all the way to the left or right when fewer keystrokes in the up or down doriection would have been more performant. This was especially true when using my nose, and most of my concentration was focused simply hitting the keys correctly. Therefore, while I was able to perform the calculations the fastest with Switch 5, those times were also less consistent than with any other system.</p>
+			<h3>Results</h3>
+			<p>Click here to download my <a href="test-results.xlsx">test results</a>.</p>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="calculator.js" type="text/javascript"></script>
